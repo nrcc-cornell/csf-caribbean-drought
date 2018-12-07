@@ -1,0 +1,196 @@
+/*
+///////////////////////////////////////////////////////////////////////////////
+//
+// Climate Smart Farming Caribbean Drought Atlas
+// Copyright (c) 2018 Cornell Institute for Climate Smart Solutions
+// All Rights Reserved
+//
+// This software is published under the provisions of the GNU General Public
+// License <http://www.gnu.org/licenses/>. A text copy of the license can be
+// found in the file 'LICENSE' included with this software.
+//
+// A text copy of the copyright notice, licensing conditions and disclaimers
+// is available in the file 'COPYRIGHT' included with this software.
+//
+///////////////////////////////////////////////////////////////////////////////
+*/
+
+@media screen {
+    html { height: 100%; }
+    body { width: 1024px; height: 768px; }
+
+    #csftool-content{
+        height: 466px;
+        //width: 908px;
+        width: 978px;
+    }
+
+    .csftool-input{
+        //display: inline-block;
+        display: flex;
+        flex-direction: column;
+        float:left;
+        //height: 460px;
+        //height: 466px;
+        height: 546px;
+        width: 180px;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        border-right:3px solid #00bb00;
+        border-top:3px solid #00bb00;
+        border-left:3px solid #00bb00;
+        border-bottom:3px solid #00bb00;
+    }
+
+    .csftool-display{
+        float:left;
+        /*height: 435px;*/
+        /*width: 699px;*/
+        //height: 460px;
+        //height: 466px;
+        height: 546px;
+        //width: 724px;
+        //width: 728px;
+        //width: 784px;
+        width: 788px;
+        margin: 0 0 0 0;
+        /*border: none;*/
+        border-top: 3px solid #00bb00;
+        border-right: 3px solid #00bb00;
+        border-bottom: 3px solid #00bb00;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .csftool-display-map{
+        float:left;
+        height: 440px;
+        width: 784px;
+        margin: 0 0 0 0;
+        border: none;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .csftool-display-chart{
+        float:left;
+        height: 100px;
+        width: 784px;
+        margin: 0 0 0 0;
+        border: none;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .csftool-display-message{
+        float: left;
+        color: #FF0000;
+        font-size: 20px;
+        height: 100px;
+        width: 784px;
+        margin: 0 0 0 0;
+        border: none;
+        text-align: center;
+    }
+
+    .leaflet-container {
+        height: 440px;
+        width: 784px;
+        background: #FFFFFF;
+        z-index: 1;
+    }
+
+    .map-legend {
+        margin: 40px 0px 0px 0px;
+    }
+
+    .year-month-label {
+        margin: 10px 0px 10px 15px;
+    }
+
+    .year-month-select {
+        margin: 0px 0px 0px 10px;
+    }
+
+    .date-select{
+        width: 75px;
+    }
+
+    .logo {
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.loader {
+  margin: 200px auto;
+  font-size: 18px;
+  //font-size: 30px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-animation: load5 1.1s infinite ease;
+  animation: load5 1.1s infinite ease;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 1000;
+}
+@-webkit-keyframes load5 {
+  0%,
+  100% {
+    box-shadow: 0em -2.6em 0em 0em #00bb00, 1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2), 2.5em 0em 0 0em rgba(0, 87, 0, 0.2), 1.75em 1.75em 0 0em rgba(0, 87, 0, 0.2), 0em 2.5em 0 0em rgba(0, 87, 0, 0.2), -1.8em 1.8em 0 0em rgba(0, 87, 0, 0.2), -2.6em 0em 0 0em rgba(0, 87, 0, 0.5), -1.8em -1.8em 0 0em rgba(0, 87, 0, 0.7);
+  }
+  12.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 87, 0, 0.7), 1.8em -1.8em 0 0em #00bb00, 2.5em 0em 0 0em rgba(0, 87, 0, 0.2), 1.75em 1.75em 0 0em rgba(0, 87, 0, 0.2), 0em 2.5em 0 0em rgba(0, 87, 0, 0.2), -1.8em 1.8em 0 0em rgba(0, 87, 0, 0.2), -2.6em 0em 0 0em rgba(0, 87, 0, 0.2), -1.8em -1.8em 0 0em rgba(0, 87, 0, 0.5);
+  }
+  25% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 87, 0, 0.5), 1.8em -1.8em 0 0em rgba(0, 87, 0, 0.7), 2.5em 0em 0 0em #00bb00, 1.75em 1.75em 0 0em rgba(0, 87, 0, 0.2), 0em 2.5em 0 0em rgba(0, 87, 0, 0.2), -1.8em 1.8em 0 0em rgba(0, 87, 0, 0.2), -2.6em 0em 0 0em rgba(0, 87, 0, 0.2), -1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2);
+  }
+  37.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 87, 0, 0.2), 1.8em -1.8em 0 0em rgba(0, 87, 0, 0.5), 2.5em 0em 0 0em rgba(0, 87, 0, 0.7), 1.75em 1.75em 0 0em #00bb00, 0em 2.5em 0 0em rgba(0, 87, 0, 0.2), -1.8em 1.8em 0 0em rgba(0, 87, 0, 0.2), -2.6em 0em 0 0em rgba(0, 87, 0, 0.2), -1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 87, 0, 0.2), 1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2), 2.5em 0em 0 0em rgba(0, 87, 0, 0.5), 1.75em 1.75em 0 0em rgba(0, 87, 0, 0.7), 0em 2.5em 0 0em #00bb00, -1.8em 1.8em 0 0em rgba(0, 87, 0, 0.2), -2.6em 0em 0 0em rgba(0, 87, 0, 0.2), -1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2);
+  }
+  62.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 87, 0, 0.2), 1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2), 2.5em 0em 0 0em rgba(0, 87, 0, 0.2), 1.75em 1.75em 0 0em rgba(0, 87, 0, 0.5), 0em 2.5em 0 0em rgba(0, 87, 0, 0.7), -1.8em 1.8em 0 0em #00bb00, -2.6em 0em 0 0em rgba(0, 87, 0, 0.2), -1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2);
+  }
+  75% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 87, 0, 0.2), 1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2), 2.5em 0em 0 0em rgba(0, 87, 0, 0.2), 1.75em 1.75em 0 0em rgba(0, 87, 0, 0.2), 0em 2.5em 0 0em rgba(0, 87, 0, 0.5), -1.8em 1.8em 0 0em rgba(0, 87, 0, 0.7), -2.6em 0em 0 0em #00bb00, -1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2);
+  }
+  87.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 87, 0, 0.2), 1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2), 2.5em 0em 0 0em rgba(0, 87, 0, 0.2), 1.75em 1.75em 0 0em rgba(0, 87, 0, 0.2), 0em 2.5em 0 0em rgba(0, 87, 0, 0.2), -1.8em 1.8em 0 0em rgba(0, 87, 0, 0.5), -2.6em 0em 0 0em rgba(0, 87, 0, 0.7), -1.8em -1.8em 0 0em #00bb00;
+  }
+}
+@keyframes load5 {
+  0%,
+  100% {
+    box-shadow: 0em -2.6em 0em 0em #00bb00, 1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2), 2.5em 0em 0 0em rgba(0, 87, 0, 0.2), 1.75em 1.75em 0 0em rgba(0, 87, 0, 0.2), 0em 2.5em 0 0em rgba(0, 87, 0, 0.2), -1.8em 1.8em 0 0em rgba(0, 87, 0, 0.2), -2.6em 0em 0 0em rgba(0, 87, 0, 0.5), -1.8em -1.8em 0 0em rgba(0, 87, 0, 0.7);
+  }
+  12.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 87, 0, 0.7), 1.8em -1.8em 0 0em #00bb00, 2.5em 0em 0 0em rgba(0, 87, 0, 0.2), 1.75em 1.75em 0 0em rgba(0, 87, 0, 0.2), 0em 2.5em 0 0em rgba(0, 87, 0, 0.2), -1.8em 1.8em 0 0em rgba(0, 87, 0, 0.2), -2.6em 0em 0 0em rgba(0, 87, 0, 0.2), -1.8em -1.8em 0 0em rgba(0, 87, 0, 0.5);
+  }
+  25% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 87, 0, 0.5), 1.8em -1.8em 0 0em rgba(0, 87, 0, 0.7), 2.5em 0em 0 0em #00bb00, 1.75em 1.75em 0 0em rgba(0, 87, 0, 0.2), 0em 2.5em 0 0em rgba(0, 87, 0, 0.2), -1.8em 1.8em 0 0em rgba(0, 87, 0, 0.2), -2.6em 0em 0 0em rgba(0, 87, 0, 0.2), -1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2);
+  }
+  37.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 87, 0, 0.2), 1.8em -1.8em 0 0em rgba(0, 87, 0, 0.5), 2.5em 0em 0 0em rgba(0, 87, 0, 0.7), 1.75em 1.75em 0 0em #00bb00, 0em 2.5em 0 0em rgba(0, 87, 0, 0.2), -1.8em 1.8em 0 0em rgba(0, 87, 0, 0.2), -2.6em 0em 0 0em rgba(0, 87, 0, 0.2), -1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 87, 0, 0.2), 1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2), 2.5em 0em 0 0em rgba(0, 87, 0, 0.5), 1.75em 1.75em 0 0em rgba(0, 87, 0, 0.7), 0em 2.5em 0 0em #00bb00, -1.8em 1.8em 0 0em rgba(0, 87, 0, 0.2), -2.6em 0em 0 0em rgba(0, 87, 0, 0.2), -1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2);
+  }
+  62.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 87, 0, 0.2), 1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2), 2.5em 0em 0 0em rgba(0, 87, 0, 0.2), 1.75em 1.75em 0 0em rgba(0, 87, 0, 0.5), 0em 2.5em 0 0em rgba(0, 87, 0, 0.7), -1.8em 1.8em 0 0em #00bb00, -2.6em 0em 0 0em rgba(0, 87, 0, 0.2), -1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2);
+  }
+  75% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 87, 0, 0.2), 1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2), 2.5em 0em 0 0em rgba(0, 87, 0, 0.2), 1.75em 1.75em 0 0em rgba(0, 87, 0, 0.2), 0em 2.5em 0 0em rgba(0, 87, 0, 0.5), -1.8em 1.8em 0 0em rgba(0, 87, 0, 0.7), -2.6em 0em 0 0em #00bb00, -1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2);
+  }
+  87.5% {
+    box-shadow: 0em -2.6em 0em 0em rgba(0, 87, 0, 0.2), 1.8em -1.8em 0 0em rgba(0, 87, 0, 0.2), 2.5em 0em 0 0em rgba(0, 87, 0, 0.2), 1.75em 1.75em 0 0em rgba(0, 87, 0, 0.2), 0em 2.5em 0 0em rgba(0, 87, 0, 0.2), -1.8em 1.8em 0 0em rgba(0, 87, 0, 0.5), -2.6em 0em 0 0em rgba(0, 87, 0, 0.7), -1.8em -1.8em 0 0em #00bb00;
+  }
+}
+
+}

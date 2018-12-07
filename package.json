@@ -1,0 +1,36 @@
+{
+  "name": "csf-caribbean-drought",
+  "version": "1.0.0",
+  "homepage": "http://tools.climatesmartfarming.org/caribbean-drought",
+  "private": true,
+  "devDependencies": {
+    "custom-react-scripts": "0.0.23",
+    "gh-pages": "^1.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "highcharts": "^5.0.12",
+    "jquery": "^3.2.1",
+    "jquery-ui": "^1.12.1",
+    "jsonp": "^0.2.1",
+    "leaflet": "^1.0.3",
+    "mobx": "^3.1.16",
+    "mobx-react": "^4.2.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-highcharts": "^12.0.0",
+    "react-leaflet": "^1.2.1",
+    "react-leaflet-control": "^1.4.0",
+    "react-loader": "^2.4.2",
+    "react-loader-advanced": "^1.7.0",
+    "react-select": "^1.0.0-rc.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
