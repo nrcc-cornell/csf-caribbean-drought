@@ -4,7 +4,7 @@
   "homepage": "http://tools.climatesmartfarming.org/caribbean-drought",
   "private": true,
   "devDependencies": {
-    "custom-react-scripts": "0.0.23",
+    "custom-react-scripts": "^0.2.2",
     "gh-pages": "^1.1.0"
   },
   "dependencies": {
