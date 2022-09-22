@@ -60,7 +60,13 @@ export default class MapDisplay extends Component {
                     >
                         <TileLayer
                             attribution='&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                            url="http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"
+                            // wmflabs originally used, no longer available
+                            //url="http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"
+                            // the following would work, but it is hard to find ocean colors that are outside of data color ranges
+                            //url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+                            //url="https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png"
+                            // no tiles used (white ocean, no country labels)
+                            url=""
                         />
                         <ImageOverlay
                             url={'http://tools.climatesmartfarming.org/caribbean-drought/static/pdsi_'+app.yearMonthText+'.png'}
